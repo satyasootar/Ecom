@@ -34,7 +34,7 @@ html {
 /* have a look into body once after we done with rest of the styling  */
 body {
   margin: 0 auto;
-  padding: 0 32px;
+  /* padding: 0 32px; */
   min-width: 320px;
   background-color: var(--backgroundColor);
 }

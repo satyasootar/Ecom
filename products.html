@@ -14,29 +14,26 @@
     <link rel="stylesheet" href="style.css" />
     <title>js ecom website</title>
   </head>
-  <body>
+  <body onload="Finish_Loader()">
+    <!-- pre load -->
+    <div id="loader">
+  <div class="loader">Loading
+    <span></span>
+  </div>
+    </div>
     <header class="section-navbar">
-      <section class="top_txt">
-        <div class="head container">
-          <div class="head_txt">
-            <p>Free shipping, 30-day return or refund guarantee.</p>
-          </div>
-          <div class="sing_in_up">
-            <a href="# ">SIGN IN</a>
-            <a href="# ">SIGN UP</a>
-          </div>
-        </div>
-      </section>
+     
       <div class="container">
         <div class="navbar-brand">
           <a href="index.html">
             <img
-              src="./public/images/log.png"
-              alt="thapa eCommerce logo"
-              class="logo"
-              width="80%"
-              height="auto"
-            />
+            src="./public/images/Newlogo.png"
+            alt="thapa eCommerce logo"
+            class="logo"
+            width="80%"
+            height="auto"
+            style="mix-blend-mode:darken;"
+          />
           </a>
         </div>
 
@@ -66,6 +63,18 @@
           </ul>
         </nav>
       </div>
+
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+          </div>
+          <div class="sing_in_up">
+            <a href="# ">SIGN IN</a>
+            <a href="# ">SIGN UP</a>
+          </div>
+        </div>
+      </section>
     </header>
 
     <!-- ========== Start Extra Product Section ========== -->
@@ -223,6 +232,18 @@
     <!-- Include the footer JavaScript file -->
 
     <!--* ========== End Footer Section ========== -->
+
+  // For Loader Page
+   <script>
+     
+    const preloader = document.querySelector("#loader");
+    function Finish_Loader(){
+        preloader.style.display = "none";
+    }
+        </script>
+
+
+
 
     <script type="module" src="main.js"></script>
   </body>

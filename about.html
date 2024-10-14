@@ -21,32 +21,31 @@
       href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Jost:wght@300;400;500;700&family=Poppins:wght@200;300;400;600&family=Quicksand:wght@300;400;500;600;700&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css">
     <!--? ## Step 1: Don't Forget To LIKE SHARE & SUBSCRIBE TO THAPA TECHNCIAL YOUTUBE CHANNEL 👉 https://www.youtube.com/thapatechnical -->
   </head>
-  <body>
+  <body onload="Finish_Loader()">
+    <!-- pre load -->
+    <div id="loader">
+  <div class="loader">Loading
+    <span></span>
+  </div>
+    </div>
+       </div>
     <!-- ========== Start Navbar ========== -->
 
     <header class="section-navbar">
-      <section class="top_txt">
-        <div class="head container">
-          <div class="head_txt">
-            <p>Free shipping, 30-day return or refund guarantee.</p>
-          </div>
-          <div class="sing_in_up">
-            <a href="# ">SIGN IN</a>
-            <a href="# ">SIGN UP</a>
-          </div>
-        </div>
-      </section>
+
       <div class="container">
         <div class="navbar-brand">
           <a href="index.html">
             <img
-              src="./images/log.png"
+              src="./public/images/Newlogo.png"
               alt="thapa eCommerce logo"
               class="logo"
               width="80%"
               height="auto"
+              style="mix-blend-mode:darken;"
             />
           </a>
         </div>
@@ -76,6 +75,17 @@
           </ul>
         </nav>
       </div>
+      <section class="top_txt">
+        <div class="head container">
+          <div class="head_txt">
+            <p>Free shipping, 30-day return or refund guarantee.</p>
+          </div>
+          <div class="sing_in_up">
+            <a href="# ">SIGN IN</a>
+            <a href="# ">SIGN UP</a>
+          </div>
+        </div>
+      </section>
     </header>
     <!-- ========== End Navbar ========== -->
     <!-- ========== Start Hero-Section ========== -->
@@ -103,7 +113,7 @@
           >
             <figure>
               <img
-                src="./images/heroSection.svg"
+                src="./public/images/heroSection.svg"
                 alt="coding languages using html css js"
               />
             </figure>
@@ -146,7 +156,7 @@
             <a href="#">Show now</a>
           </div>
           <div class="extra-img extra-laptop">
-            <img src="./images/laptop.png" alt="" />
+            <img src="./public/images/laptop.png" alt="" />
           </div>
         </div>
 
@@ -157,7 +167,7 @@
             <a href="#">Show now</a>
           </div>
           <div class="extra-img">
-            <img src="./images/headphoneEcom.png" alt="" />
+            <img src="./public/images/headphoneEcom.png" alt="" />
           </div>
         </div>
         <div class="div-extra grid grid-two--cols">
@@ -167,7 +177,7 @@
             <a href="#">Show now</a>
           </div>
           <div class="extra-img">
-            <img src="./images/mobiles.png" alt="" />
+            <img src="./public/images/mobiles.png" alt="" />
           </div>
         </div>
       </div>
@@ -274,7 +284,7 @@
         </div>
         <div class="choose-center-div" data-aos="zoom-in" data-aos-delay="300">
           <figure>
-            <img src="./images/ecompost.png" alt="thapa technical home page " />
+            <img src="./public/images/ecompost.png" alt="thapa technical home page " />
           </figure>
         </div>
         <div class="choose-right-div">
@@ -331,7 +341,8 @@
     <footer class="section-footer">
       <div class="footer-container container">
         <div class="content_1">
-          <img src="./images/logo.png" alt="logo" />
+          <img src="./public/images/Newlogo(Dark).png" style="mix-blend-mode:color-dodge;" alt="logo" />
+
           <p>
             Welcome to Thapa EcomStore, your ultimate destination for
             cutting-edge gadgets!
@@ -378,5 +389,14 @@
     <script>
       AOS.init();
     </script>
+    // For Loader Page
+     <script>
+       
+      
+      const preloader = document.querySelector("#loader");
+      function Finish_Loader(){
+          preloader.style.display = "none";
+      }
+          </script>
   </body>
 </html>

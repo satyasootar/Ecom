@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(103,143,207);
+    background: linear-gradient(89deg, rgba(103,143,207,1) 15%, rgba(235,243,255,1) 97%);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+   
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(137, 43, 226, 0.043);
+    padding: 40px 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+h3 {
+    color: rgb(17, 16, 16);
+    margin-bottom: 18px;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.log label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+.log input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+.log input::placeholder {
+    color: #888;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #8916C1;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #dddddd;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.social .go {
+    background-color: #DB4437;
+}
+
+.social .fb {
+    background-color: #4267B2;
+}
+
+.social div:hover {
+    opacity: 0.8;
+}
+
+.social i {
+    margin-right: 10px;
+}

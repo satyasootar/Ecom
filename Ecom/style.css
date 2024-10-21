@@ -5,7 +5,7 @@
 }
 
 :root {
-  font-family: "Urbanist", sans-serif;
+  font-family: poppins;
   line-height: 1.5;
   font-weight: 400;
 
@@ -62,7 +62,7 @@ body {
   border-radius: 50%;
   text-align: center;
   line-height: 150px;
-  font-family: sans-serif;
+  font-family: poppins;
   font-size: 20px;
   color: #00ddff;
   letter-spacing: 2px;
@@ -140,10 +140,10 @@ h6 {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.3rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 3.3rem;
 }
 
 p,
@@ -170,7 +170,7 @@ a {
 }
 
 ::placeholder {
-  font-family: "Urbanist", sans-serif;
+  font-family: poppins;
   line-height: 1.5;
   font-weight: 400;
 }
@@ -266,7 +266,7 @@ textarea:focus-visible {
   border-color: red;
   font-size: 1.6rem;
   z-index: 1000;
-  font-family: "urbanist";
+  font-family:poppins ;
   animation: toastAnimation 2s linear;
   -webkit-animation: toastAnimation 2s linear;
   box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),

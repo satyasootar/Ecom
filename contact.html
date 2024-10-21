@@ -14,8 +14,14 @@
     />
     <title>Contact Page</title>
   </head>
-  <body>
-    <!-- ========== Start Navbar ========== -->
+  <body onload="Finish_Loader()">
+    <!-- pre load -->
+    <div id="loader">
+  <div class="loader">Loading
+    <span></span>
+  </div>
+    </div> 
+   <!-- ========== Start Navbar ========== -->
 
     <header class="section-navbar">
       <section class="top_txt">
@@ -34,12 +40,13 @@
         <div class="navbar-brand">
           <a href="index.html">
             <img
-              src="./images/log.png"
-              alt="thapa eCommerce logo"
-              class="logo"
-              width="80%"
-              height="auto"
-            />
+            src="./public/images/Newlogo.png"
+            alt="thapa eCommerce logo"
+            class="logo"
+            width="80%"
+            height="auto"
+            style="mix-blend-mode:darken;"
+          />
           </a>
         </div>
         <nav class="navbar">
@@ -166,6 +173,15 @@
     <script type="module" src="/main.js"></script>
 
     <!-- JS SCRIPT  -->
+
+  // For Loader Page
+   <script>
+    const preloader = document.querySelector("#loader");
+    function Finish_Loader(){
+        preloader.style.display = "none";
+    }
+        </script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

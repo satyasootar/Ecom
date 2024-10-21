@@ -2,8 +2,9 @@ const footerHTML = `
   <footer class="section-footer">
     <div class="footer-container container">
       <div class="content_1">
-        <img src="./images/logo.png" alt="logo" />
-        <p>
+          <img src="./public/images/Newlogo(Dark).png" style="mix-blend-mode:color-dodge;" alt="logo" />
+
+      <p>
           Welcome to Thapa EcomStore, <br />
           your ultimate destination for
           <br />

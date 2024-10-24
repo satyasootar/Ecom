@@ -37,8 +37,22 @@ body {
   /* padding: 0 32px; */
   min-width: 320px;
   background-color: var(--backgroundColor);
+  transition: background-color 0.5s, color 0.5s;
+  background-color: white; /* Day mode */
+  color: black; /* Day mode */
+
 }
 /* for preloader */
+.night-mode {
+            background-color: black; /* Night mode */
+            color: white; /* Night mode */
+        }
+button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
 #loader{
   height: 100vh;
   width: 100%;

@@ -26,6 +26,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 20px;
+    margin: 24px;
 }
 
 h3 {
